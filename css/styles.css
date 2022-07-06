@@ -258,6 +258,11 @@ a {
 
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
+  pointer-events: all;
+  visibility: visible;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.8);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -267,13 +272,15 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 
   min-width: 528px;
   min-height: 581px;
   border-radius: 4px;
 
   background-color: var(--primary-bg-color);
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms var(--timing-function);
 }
 .modal-btn {
   display: flex;
