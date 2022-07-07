@@ -635,16 +635,16 @@ section {
   display: flex;
   width: 170px;
   height: 92px;
-  outline: 1px solid var(--primary-icon-color);
+  border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
   fill: var(--primary-icon-color);
   transition: fill 250ms var(--timing-function),
-    outline 250ms var(--timing-function);
+    border 250ms var(--timing-function);
 }
 .link-icon:hover,
 .link-icon:focus {
   fill: var(--accent-text-color);
-  outline: 1px solid var(--accent-text-color);
+  border: 1px solid var(--accent-text-color);
 }
 
 /* Подвал */
